@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Quis.ResultActivity"
+    android:background="@drawable/bg2">
+
+    <TextView
+        android:textColor="@color/white"
+        android:id="@+id/textView"
+        android:layout_marginStart="37dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="79dp"
+        android:text="@string/totalquest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:textColor="@color/white"
+        android:layout_below="@id/textView"
+        android:id="@+id/textView2"
+        android:layout_alignStart="@id/textView"
+        android:layout_marginTop="105dp"
+        android:text="@string/correctanswer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:textColor="@color/white"
+        android:layout_below="@id/textView2"
+        android:id="@+id/textView3"
+        android:layout_alignStart="@id/textView"
+        android:layout_marginTop="105dp"
+        android:text="@string/wronganswer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tvTotal"
+        android:textColor="@color/white"
+        android:layout_marginStart="70dp"
+        android:layout_marginEnd="82dp"
+        android:layout_marginTop="79dp"
+        android:layout_alignParentEnd="true"
+        android:layout_toRightOf="@id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/total" />
+
+    <TextView
+        android:id="@+id/tvAnswer"
+        android:textColor="@color/white"
+        android:layout_below="@id/tvTotal"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="82dp"
+        android:layout_marginTop="105dp"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/correct" />
+
+    <TextView
+        android:id="@+id/tvWrong"
+        android:textColor="@color/white"
+        android:layout_below="@id/tvAnswer"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="82dp"
+        android:layout_marginTop="105dp"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/wrong" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/retake_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvWrong"
+        android:background="@drawable/quisbutton"
+        android:padding="12dp"
+        android:layout_margin="26dp"
+        android:text="@string/retake"
+        android:textColor="@color/white" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/end_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvWrong"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="26dp"
+        android:background="@drawable/quisbutton"
+        android:padding="12dp"
+        android:text="@string/endquiz"
+        android:textColor="@color/white" />
+
+
+</RelativeLayout>

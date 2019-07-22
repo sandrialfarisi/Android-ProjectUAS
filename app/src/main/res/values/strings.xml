@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">BelajarYuKak!</string>
+    <string name="belajaryukak">BelajarYuKak!</string>
+    <string name="aplikasi_belajar_untuk_kakak_kakak">Aplikasi Belajar Untuk Kakak Kakak</string>
+    <string name="modul_pembelajaran">Materi</string>
+    <string name="action_contact">About</string>
+    <string name="namakelompok">Kelompok 1 &#169;2019</string>
+    <string name="about">About</string>
+    <string name="signout">SignOut</string>
+    <string name="login">Login</string>
+    <string name="signup">SingUp</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="title">Title</string>
+    <string name="desc">Description</string>
+    <string name="indo">B.Indonesia</string>
+    <string name="ppkn">PPKN</string>
+    <string name="senbud">Seni Budaya</string>
+    <string name="penjaskes">Penjaskes</string>
+    <string name="quis">QUIS</string>
+    <string name="totalquest">Total Question : </string>
+    <string name="correctanswer">Correct Answer : </string>
+    <string name="wronganswer">Wrong Answer : </string>
+    <string name="total">Total</string>
+    <string name="correct">Correct</string>
+    <string name="wrong">Wrong</string>
+    <string name="retake">Retake Quiz</string>
+    <string name="endquiz">  End Quiz  </string>
+    <string name="score">Score : 0</string>
+    <string name="timer">Timer : </string>
+    <string name="quest">Question : 1</string>
+    <string name="question">Question.....</string>
+    <string name="option1">Option 1</string>
+    <string name="option2">Option 2</string>
+    <string name="option3">Option 3</string>
+    <string name="option4">Option 4</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_mapel">MapelActivity</string>
+</resources>
