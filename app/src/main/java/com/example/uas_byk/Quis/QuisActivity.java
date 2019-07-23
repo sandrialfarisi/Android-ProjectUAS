@@ -35,7 +35,6 @@ public class QuisActivity extends AppCompatActivity {
     DatabaseReference reference;
     int wrong = 0;
     long data = 0;
-    public boolean isCounterRunning;
     CountDownTimer countDownTimer;
 
 
@@ -348,7 +347,9 @@ public class QuisActivity extends AppCompatActivity {
 
     @Override
     public void onBackPressed() {
-        countDownTimer.cancel();
+        if (countDownTimer == null) {
+            countDownTimer.cancel();
+        }
         startActivity(new Intent(this, HomeActivity.class));
         finish();
     }

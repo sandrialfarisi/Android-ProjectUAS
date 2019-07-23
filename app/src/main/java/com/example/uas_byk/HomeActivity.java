@@ -16,7 +16,9 @@ import android.widget.Toast;
 
 import com.example.uas_byk.Login.LoginFragment;
 import com.example.uas_byk.Mapel.MapelIndoActivity;
+import com.example.uas_byk.Mapel.MapelPenjasActivity;
 import com.example.uas_byk.Mapel.MapelPknActivity;
+import com.example.uas_byk.Mapel.MapelSenBudActivity;
 import com.example.uas_byk.Quis.QuisActivity;
 import com.google.android.gms.auth.api.signin.GoogleSignIn;
 import com.google.android.gms.auth.api.signin.GoogleSignInClient;
@@ -24,7 +26,7 @@ import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
 import com.google.firebase.auth.FirebaseAuth;
 
 public class HomeActivity extends AppCompatActivity implements View.OnClickListener {
-    private CardView btnIndo, btnPkn, btnQuis;
+    private CardView btnIndo, btnPkn, btnSenbud, btnPenjas, btnQuis;
     private FirebaseAuth mAuth;
     public GoogleSignInOptions gso;
     private GoogleSignInClient mGoogleSignInClient;
@@ -35,10 +37,14 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
         setContentView(R.layout.activity_home);
         btnIndo = findViewById(R.id.btn_bindo);
         btnPkn = findViewById(R.id.btn_ppkn);
+        btnSenbud = findViewById(R.id.btn_senibudaya);
+        btnPenjas = findViewById(R.id.btn_penjaskes);
         btnQuis = findViewById(R.id.btn_quis);
         mAuth = FirebaseAuth.getInstance();
         btnIndo.setOnClickListener(this);
         btnPkn.setOnClickListener(this);
+        btnSenbud.setOnClickListener(this);
+        btnPenjas.setOnClickListener(this);
         btnQuis.setOnClickListener(this);
 
         gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
@@ -79,6 +85,14 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.btn_ppkn:
                 i = new Intent(this, MapelPknActivity.class);
+                startActivity(i);
+                break;
+            case R.id.btn_senibudaya:
+                i = new Intent(this, MapelSenBudActivity.class);
+                startActivity(i);
+                break;
+            case R.id.btn_penjaskes:
+                i = new Intent(this, MapelPenjasActivity.class);
                 startActivity(i);
                 break;
             case R.id.btn_quis:

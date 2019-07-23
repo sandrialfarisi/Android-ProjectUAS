@@ -94,7 +94,7 @@
                         android:layout_height="match_parent">
 
                         <ImageView
-                            android:src="@drawable/mtk"
+                            android:src="@drawable/indo"
                             android:layout_width="80dp"
                             android:layout_height="80dp" />
 
@@ -127,7 +127,7 @@
                         android:layout_height="match_parent">
 
                         <ImageView
-                            android:src="@drawable/mtk"
+                            android:src="@drawable/pkn"
                             android:layout_width="80dp"
                             android:layout_height="80dp" />
 
@@ -159,7 +159,7 @@
                         android:layout_height="match_parent">
 
                         <ImageView
-                            android:src="@drawable/mtk"
+                            android:src="@drawable/seni"
                             android:layout_width="80dp"
                             android:layout_height="80dp" />
 
@@ -191,7 +191,7 @@
                         android:layout_height="match_parent">
 
                         <ImageView
-                            android:src="@drawable/mtk"
+                            android:src="@drawable/penjas"
                             android:layout_width="80dp"
                             android:layout_height="80dp" />
 
@@ -223,7 +223,7 @@
                         android:layout_height="match_parent">
 
                         <ImageView
-                            android:src="@drawable/mtk"
+                            android:src="@drawable/quis"
                             android:layout_width="80dp"
                             android:layout_height="80dp" />
 
