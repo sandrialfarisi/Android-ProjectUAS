@@ -348,9 +348,7 @@ public class QuisActivity extends AppCompatActivity {
 
     @Override
     public void onBackPressed() {
-        if (countDownTimer == null) {
-            countDownTimer.cancel();
-        }
+        countDownTimer.cancel();
         startActivity(new Intent(this, HomeActivity.class));
         finish();
     }

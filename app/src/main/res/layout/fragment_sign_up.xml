@@ -47,24 +47,6 @@
             app:layout_constraintTop_toBottomOf="@+id/btnLogin"
             app:layout_constraintVertical_bias="0.053" />
 
-        <ImageButton
-            android:id="@+id/imgFacebook"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_marginBottom="8dp"
-            android:layout_marginEnd="8dp"
-            android:layout_marginLeft="16dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.023"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/btnSignup1"
-            app:layout_constraintVertical_bias="0.05"
-            app:srcCompat="@mipmap/facebook"
-            android:background="@color/fui_transparent" />
 
         <ImageButton
             android:id="@+id/imgGoogle"
@@ -80,8 +62,8 @@
             app:layout_constraintHorizontal_bias="0.023"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imgFacebook"
-            app:layout_constraintVertical_bias="0.021"
+            app:layout_constraintTop_toBottomOf="@+id/btnSignup1"
+            app:layout_constraintVertical_bias="0.05"
             app:srcCompat="@mipmap/google"
             android:background="@color/fui_transparent" />
 
