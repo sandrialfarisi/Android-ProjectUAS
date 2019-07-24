@@ -63,12 +63,14 @@ public class MapelPknActivity extends AppCompatActivity {
             public void onBindViewHolder(MapelHolder holder, int position, MapelItem model) {
                 progressBar.setVisibility(View.GONE);
                 holder.textTitle.setText(model.getJudul());
-                holder.textDescription.setText(model.getPenjelasan());
+                holder.textDescription.setText(model.getDesc1());
 
                 holder.itemView.setOnClickListener(v -> {
                     Intent intent = new Intent(MapelPknActivity.this, DetailMapelActivity.class);
                     intent.putExtra("judul", model.getJudul());
-                    intent.putExtra("penjelasan", model.getPenjelasan());
+                    intent.putExtra("desc1", model.getDesc1());
+                    intent.putExtra("desc2", model.getDesc2());
+                    intent.putExtra("desc3", model.getDesc3());
                     startActivity(intent);
                 });
             }

@@ -24,6 +24,8 @@
     <string name="total">Total</string>
     <string name="correct">Correct</string>
     <string name="wrong">Wrong</string>
+    <string name="totalpoints">Total Points : </string>
+    <string name="points">Points</string>
     <string name="retake">Retake Quiz</string>
     <string name="endquiz">  End Quiz  </string>
     <string name="score">Score : 0</string>

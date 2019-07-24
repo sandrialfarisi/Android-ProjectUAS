@@ -89,6 +89,7 @@ public class QuisActivity extends AppCompatActivity {
                     i.putExtra("total", String.valueOf(total));
                     i.putExtra("correct", String.valueOf(correct));
                     i.putExtra("incorrect", String.valueOf(wrong));
+                    i.putExtra("points", String.valueOf(mScore));
                     startActivity(i);
                     finish();
                 } else {

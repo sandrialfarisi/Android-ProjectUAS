@@ -14,6 +14,8 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Toast;
 
+import com.bestsoft32.tt_fancy_gif_dialog_lib.TTFancyGifDialog;
+import com.bestsoft32.tt_fancy_gif_dialog_lib.TTFancyGifDialogListener;
 import com.example.uas_byk.Login.LoginFragment;
 import com.example.uas_byk.Mapel.MapelIndoActivity;
 import com.example.uas_byk.Mapel.MapelPenjasActivity;
@@ -65,9 +67,34 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
             case R.id.action_contact:
+                Intent i;
+                i = new Intent(this, AboutActivity.class);
+                startActivity(i);
                 return true;
             case R.id.action_signout:
-                logOut();
+                new TTFancyGifDialog.Builder(this)
+                        .setTitle("Log Out?")
+                        .setMessage("Jangan patah semangat dan terus belajar ya kak.")
+                        .setPositiveBtnText("Log Out")
+                        .setPositiveBtnBackground("#22b573")
+                        .setNegativeBtnText("Cancel")
+                        .setNegativeBtnBackground("#c1272d")
+                        .setGifResource(R.drawable.a)      //pass your gif, png or jpg
+                        .isCancellable(true)
+                        .OnPositiveClicked(new TTFancyGifDialogListener() {
+                            @Override
+                            public void OnClick() {
+                                Toast.makeText(HomeActivity.this, "LogOut", Toast.LENGTH_SHORT).show();
+                                logOut();
+                            }
+                        })
+                        .OnNegativeClicked(new TTFancyGifDialogListener() {
+                            @Override
+                            public void OnClick() {
+                                Toast.makeText(HomeActivity.this, "Cancel", Toast.LENGTH_SHORT).show();
+                            }
+                        })
+                        .build();
                 return true;
             default:
                 return super.onOptionsItemSelected(item);

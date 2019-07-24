@@ -12,7 +12,7 @@ import com.example.uas_byk.HomeActivity;
 import com.example.uas_byk.R;
 
 public class ResultActivity extends AppCompatActivity implements View.OnClickListener {
-    TextView t1, t2, t3;
+    TextView t1, t2, t3, t4;
     Button retake, end;
 
     @Override
@@ -23,7 +23,7 @@ public class ResultActivity extends AppCompatActivity implements View.OnClickLis
         t1 = findViewById(R.id.tvTotal);
         t2 = findViewById(R.id.tvAnswer);
         t3 = findViewById(R.id.tvWrong);
-
+        t4 = findViewById(R.id.tvPoints);
         retake = findViewById(R.id.retake_button);
         end = findViewById(R.id.end_button);
 
@@ -34,10 +34,18 @@ public class ResultActivity extends AppCompatActivity implements View.OnClickLis
         String questions = i.getStringExtra("total");
         String correct = i.getStringExtra("correct");
         String wrong = i.getStringExtra("incorrect");
+        String points = i.getStringExtra("points");
 
         t1.setText(questions);
         t2.setText(correct);
         t3.setText(wrong);
+        t4.setText(points);
+    }
+
+    @Override
+    public void onBackPressed() {
+        startActivity(new Intent(ResultActivity.this, HomeActivity.class));
+        finish();
     }
 
     @Override
