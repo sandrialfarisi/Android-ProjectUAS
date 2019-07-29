@@ -6,7 +6,7 @@
     android:padding="16dp"
     android:orientation="vertical"
     android:background="@drawable/bg2"
-    tools:context=".Quis.QuisActivity">
+    tools:context="com.devcamp.belajaryukak.id.devcamp.belajaryukak.Quis.QuisActivity">
 
     <RelativeLayout
         android:layout_width="match_parent"

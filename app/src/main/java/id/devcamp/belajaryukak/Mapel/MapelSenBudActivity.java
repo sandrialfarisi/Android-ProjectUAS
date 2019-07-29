@@ -1,4 +1,4 @@
-package com.example.uas_byk.Mapel;
+package id.devcamp.belajaryukak.Mapel;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
@@ -14,17 +14,19 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.uas_byk.R;
 import com.firebase.ui.firestore.FirestoreRecyclerAdapter;
 import com.firebase.ui.firestore.FirestoreRecyclerOptions;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.FirebaseFirestoreException;
 import com.google.firebase.firestore.Query;
 
+
 import butterknife.BindView;
 import butterknife.ButterKnife;
+import id.devcamp.belajaryukak.R;
 
-public class MapelPknActivity extends AppCompatActivity {
+
+public class MapelSenBudActivity extends AppCompatActivity {
     @BindView(R.id.progress_bar)
     ProgressBar progressBar;
 
@@ -41,7 +43,7 @@ public class MapelPknActivity extends AppCompatActivity {
         setContentView(R.layout.activity_mapel);
         ButterKnife.bind(this);
         init();
-        getFriendList();
+        getMapelList();
     }
 
     @SuppressLint("WrongConstant")
@@ -51,8 +53,8 @@ public class MapelPknActivity extends AppCompatActivity {
         db = FirebaseFirestore.getInstance();
     }
 
-    private void getFriendList() {
-        Query query = db.collection("ppkn");
+    private void getMapelList() {
+        Query query = db.collection("senbud");
 
         FirestoreRecyclerOptions<MapelItem> response = new FirestoreRecyclerOptions.Builder<MapelItem>()
                 .setQuery(query, MapelItem.class)
@@ -66,7 +68,7 @@ public class MapelPknActivity extends AppCompatActivity {
                 holder.textDescription.setText(model.getDesc1());
 
                 holder.itemView.setOnClickListener(v -> {
-                    Intent intent = new Intent(MapelPknActivity.this, DetailMapelActivity.class);
+                    Intent intent = new Intent(MapelSenBudActivity.this, DetailMapelActivity.class);
                     intent.putExtra("judul", model.getJudul());
                     intent.putExtra("desc1", model.getDesc1());
                     intent.putExtra("desc2", model.getDesc2());

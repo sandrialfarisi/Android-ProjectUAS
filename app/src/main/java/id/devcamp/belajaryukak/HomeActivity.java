@@ -1,4 +1,4 @@
-package com.example.uas_byk;
+package id.devcamp.belajaryukak;
 
 import android.content.Intent;
 
@@ -16,16 +16,19 @@ import android.widget.Toast;
 
 import com.bestsoft32.tt_fancy_gif_dialog_lib.TTFancyGifDialog;
 import com.bestsoft32.tt_fancy_gif_dialog_lib.TTFancyGifDialogListener;
-import com.example.uas_byk.Login.LoginFragment;
-import com.example.uas_byk.Mapel.MapelIndoActivity;
-import com.example.uas_byk.Mapel.MapelPenjasActivity;
-import com.example.uas_byk.Mapel.MapelPknActivity;
-import com.example.uas_byk.Mapel.MapelSenBudActivity;
-import com.example.uas_byk.Quis.QuisActivity;
+
+import id.devcamp.belajaryukak.Login.LoginFragment;
+import id.devcamp.belajaryukak.Mapel.MapelIndoActivity;
+import id.devcamp.belajaryukak.Mapel.MapelPenjasActivity;
+import id.devcamp.belajaryukak.Mapel.MapelPknActivity;
+import id.devcamp.belajaryukak.Mapel.MapelSenBudActivity;
+import id.devcamp.belajaryukak.Quis.QuisActivity;
+
 import com.google.android.gms.auth.api.signin.GoogleSignIn;
 import com.google.android.gms.auth.api.signin.GoogleSignInClient;
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
 import com.google.firebase.auth.FirebaseAuth;
+
 
 public class HomeActivity extends AppCompatActivity implements View.OnClickListener {
     private CardView btnIndo, btnPkn, btnSenbud, btnPenjas, btnQuis;

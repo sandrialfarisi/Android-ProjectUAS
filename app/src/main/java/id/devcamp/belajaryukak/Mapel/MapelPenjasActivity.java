@@ -1,4 +1,4 @@
-package com.example.uas_byk.Mapel;
+package id.devcamp.belajaryukak.Mapel;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
@@ -14,7 +14,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.uas_byk.R;
 import com.firebase.ui.firestore.FirestoreRecyclerAdapter;
 import com.firebase.ui.firestore.FirestoreRecyclerOptions;
 import com.google.firebase.firestore.FirebaseFirestore;
@@ -23,6 +22,8 @@ import com.google.firebase.firestore.Query;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
+import id.devcamp.belajaryukak.R;
+
 
 public class MapelPenjasActivity extends AppCompatActivity {
     @BindView(R.id.progress_bar)
@@ -41,7 +42,7 @@ public class MapelPenjasActivity extends AppCompatActivity {
         setContentView(R.layout.activity_mapel);
         ButterKnife.bind(this);
         init();
-        getFriendList();
+        getMapelList();
     }
 
     @SuppressLint("WrongConstant")
@@ -51,7 +52,7 @@ public class MapelPenjasActivity extends AppCompatActivity {
         db = FirebaseFirestore.getInstance();
     }
 
-    private void getFriendList() {
+    private void getMapelList() {
         Query query = db.collection("penjaskes");
 
         FirestoreRecyclerOptions<MapelItem> response = new FirestoreRecyclerOptions.Builder<MapelItem>()

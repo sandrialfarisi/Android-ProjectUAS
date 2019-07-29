@@ -1,9 +1,4 @@
-package com.example.uas_byk.Mapel;
-
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
+package id.devcamp.belajaryukak.Mapel;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
@@ -15,7 +10,10 @@ import android.view.ViewGroup;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
-import com.example.uas_byk.R;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+
 import com.firebase.ui.firestore.FirestoreRecyclerAdapter;
 import com.firebase.ui.firestore.FirestoreRecyclerOptions;
 import com.google.firebase.firestore.FirebaseFirestore;
@@ -24,8 +22,10 @@ import com.google.firebase.firestore.Query;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
+import id.devcamp.belajaryukak.R;
 
-public class MapelIndoActivity extends AppCompatActivity {
+
+public class MapelPknActivity extends AppCompatActivity {
     @BindView(R.id.progress_bar)
     ProgressBar progressBar;
 
@@ -42,7 +42,7 @@ public class MapelIndoActivity extends AppCompatActivity {
         setContentView(R.layout.activity_mapel);
         ButterKnife.bind(this);
         init();
-        getFriendList();
+        getMapelList();
     }
 
     @SuppressLint("WrongConstant")
@@ -52,8 +52,8 @@ public class MapelIndoActivity extends AppCompatActivity {
         db = FirebaseFirestore.getInstance();
     }
 
-    private void getFriendList() {
-        Query query = db.collection("bahasaindo");
+    private void getMapelList() {
+        Query query = db.collection("ppkn");
 
         FirestoreRecyclerOptions<MapelItem> response = new FirestoreRecyclerOptions.Builder<MapelItem>()
                 .setQuery(query, MapelItem.class)
@@ -67,7 +67,7 @@ public class MapelIndoActivity extends AppCompatActivity {
                 holder.textDescription.setText(model.getDesc1());
 
                 holder.itemView.setOnClickListener(v -> {
-                    Intent intent = new Intent(MapelIndoActivity.this, DetailMapelActivity.class);
+                    Intent intent = new Intent(MapelPknActivity.this, DetailMapelActivity.class);
                     intent.putExtra("judul", model.getJudul());
                     intent.putExtra("desc1", model.getDesc1());
                     intent.putExtra("desc2", model.getDesc2());

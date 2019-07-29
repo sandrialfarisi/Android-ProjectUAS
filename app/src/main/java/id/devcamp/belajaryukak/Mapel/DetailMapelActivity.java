@@ -1,14 +1,15 @@
-package com.example.uas_byk.Mapel;
-
+package id.devcamp.belajaryukak.Mapel;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.widget.TextView;
 
-import com.example.uas_byk.R;
+
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
+import id.devcamp.belajaryukak.R;
+
 
 public class DetailMapelActivity extends AppCompatActivity {
     public static String EXTRA_JUDUL = "judul";

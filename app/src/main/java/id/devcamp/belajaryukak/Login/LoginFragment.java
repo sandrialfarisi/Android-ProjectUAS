@@ -1,4 +1,4 @@
-package com.example.uas_byk.Login;
+package id.devcamp.belajaryukak.Login;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
@@ -18,8 +18,9 @@ import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.Toast;
 
-import com.example.uas_byk.HomeActivity;
-import com.example.uas_byk.R;
+import id.devcamp.belajaryukak.HomeActivity;
+import id.devcamp.belajaryukak.R;
+
 import com.google.android.gms.auth.api.signin.GoogleSignIn;
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
 import com.google.android.gms.auth.api.signin.GoogleSignInClient;
@@ -32,6 +33,7 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.auth.GoogleAuthProvider;
+
 
 import static com.firebase.ui.auth.AuthUI.getApplicationContext;
 
@@ -46,6 +48,7 @@ public class LoginFragment extends Fragment {
     private static final String TAG = "GoogleActivity";
     private static final int RC_SIGN_IN = 9001;
 
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -56,6 +59,7 @@ public class LoginFragment extends Fragment {
         edtPassword = rootview.findViewById(R.id.etLogin2);
         loginBtn = rootview.findViewById(R.id.btnRealLogin);
         imgLoginGoogle = rootview.findViewById(R.id.imgGoogle);
+
 
         FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
         if (user != null) {
@@ -146,6 +150,7 @@ public class LoginFragment extends Fragment {
 
 
     //    Check activity login2 success or not and authenticate with firebase
+    @SuppressLint("RestrictedApi")
     @Override
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
@@ -160,6 +165,7 @@ public class LoginFragment extends Fragment {
             } catch (ApiException e) {
                 // Google Sign In failed, update UI appropriately
                 Log.w(TAG, "Google sign in failed", e);
+                Toast.makeText(getApplicationContext(), "Login failed! Please try again later", Toast.LENGTH_SHORT).show();
                 // [START_EXCLUDE]
                 // [END_EXCLUDE]
             }

@@ -1,4 +1,4 @@
-package com.example.uas_byk.Login;
+package id.devcamp.belajaryukak.Login;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
@@ -18,8 +18,9 @@ import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.Toast;
 
-import com.example.uas_byk.R;
-import com.example.uas_byk.HomeActivity;
+import id.devcamp.belajaryukak.HomeActivity;
+import id.devcamp.belajaryukak.R;
+
 import com.google.android.gms.auth.api.signin.GoogleSignIn;
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
 import com.google.android.gms.auth.api.signin.GoogleSignInClient;
@@ -31,6 +32,7 @@ import com.google.firebase.auth.AuthCredential;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.GoogleAuthProvider;
+
 
 import static com.firebase.ui.auth.AuthUI.getApplicationContext;
 

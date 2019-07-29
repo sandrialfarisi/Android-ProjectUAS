@@ -1,4 +1,4 @@
-package com.example.uas_byk.Quis;
+package id.devcamp.belajaryukak.Quis;
 
 public class QuisItem {
     public String question;

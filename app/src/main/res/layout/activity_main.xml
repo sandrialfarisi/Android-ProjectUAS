@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/bg2"
-    tools:context=".MainActivity"
+    tools:context="com.devcamp.belajaryukak.id.devcamp.belajaryukak.MainActivity"
     android:id="@+id/main">
 
     <RelativeLayout

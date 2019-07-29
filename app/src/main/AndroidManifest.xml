@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.uas_byk">
+    package="id.devcamp.belajaryukak">
 
     <uses-permission android:name="android.permission.INTERNET" />
 
@@ -11,19 +11,19 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".AboutActivity"></activity>
-        <activity android:name=".Quis.ResultActivity" />
-        <activity android:name=".Quis.QuisActivity" />
-        <activity android:name=".Mapel.MapelIndoActivity" />
-        <activity android:name=".Mapel.MapelPknActivity" />
-        <activity android:name=".Mapel.MapelSenBudActivity" />
-        <activity android:name=".Mapel.MapelPenjasActivity" />
-        <activity android:name=".Mapel.DetailMapelActivity" />
+        <activity android:name="id.devcamp.belajaryukak.AboutActivity"></activity>
+        <activity android:name="id.devcamp.belajaryukak.Quis.ResultActivity" />
+        <activity android:name="id.devcamp.belajaryukak.Quis.QuisActivity" />
+        <activity android:name="id.devcamp.belajaryukak.Mapel.MapelIndoActivity" />
+        <activity android:name="id.devcamp.belajaryukak.Mapel.MapelPknActivity" />
+        <activity android:name="id.devcamp.belajaryukak.Mapel.MapelSenBudActivity" />
+        <activity android:name="id.devcamp.belajaryukak.Mapel.MapelPenjasActivity" />
+        <activity android:name="id.devcamp.belajaryukak.Mapel.DetailMapelActivity" />
         <activity
-            android:name=".HomeActivity"
+            android:name="id.devcamp.belajaryukak.HomeActivity"
             android:theme="@style/AppTheme" />
         <activity
-            android:name=".MainActivity"
+            android:name="id.devcamp.belajaryukak.MainActivity"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

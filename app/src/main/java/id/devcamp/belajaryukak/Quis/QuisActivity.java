@@ -1,24 +1,21 @@
-package com.example.uas_byk.Quis;
+package id.devcamp.belajaryukak.Quis;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.app.Activity;
-import android.app.Dialog;
-import android.app.SearchManager;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.os.Handler;
 import android.view.View;
-import android.view.Window;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.example.uas_byk.HomeActivity;
-import com.example.uas_byk.R;
+import id.devcamp.belajaryukak.HomeActivity;
+import id.devcamp.belajaryukak.R;
+
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -26,7 +23,7 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
 public class QuisActivity extends AppCompatActivity {
-    Button b1, b2, b3, b4, quit;
+    Button b1, b2, b3, b4;
     TextView t1_question, mCountDownView, mQuestionsView, mScoreView;
     int total = 0;
     int correct = 0;
@@ -93,7 +90,7 @@ public class QuisActivity extends AppCompatActivity {
                     startActivity(i);
                     finish();
                 } else {
-                    reference = FirebaseDatabase.getInstance().getReference().child("Questions").child(String.valueOf(total)); //vragen doorlopen database
+                    reference = FirebaseDatabase.getInstance().getReference().child("Questions").child(String.valueOf(total));
                     reference.addValueEventListener(new ValueEventListener() {
                         @Override
                         public void onDataChange(@NonNull DataSnapshot dataSnapshot) {

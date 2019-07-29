@@ -1,8 +1,9 @@
-package com.example.uas_byk;
+package id.devcamp.belajaryukak;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
 
 public class AboutActivity extends AppCompatActivity {
 

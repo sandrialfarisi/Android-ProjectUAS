@@ -1,6 +1,4 @@
-package com.example.uas_byk.Mapel;
-
-import java.io.Serializable;
+package id.devcamp.belajaryukak.Mapel;
 
 public class MapelItem {
     private String judul;

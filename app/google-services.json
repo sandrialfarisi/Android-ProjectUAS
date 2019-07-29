@@ -8,35 +8,35 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:523883687559:android:398c9d04e5e7fe5a",
+        "mobilesdk_app_id": "1:523883687559:android:d5dde243c02eb559",
         "android_client_info": {
-          "package_name": "com.example.uas_byk"
+          "package_name": "id.devcamp.belajaryukak"
         }
       },
       "oauth_client": [
         {
-          "client_id": "523883687559-f3aoq8nda9m3ndvth01snagv77qubgrv.apps.googleusercontent.com",
+          "client_id": "523883687559-odtt5tj41aoc55e687sg8edbev6dmhqo.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "com.example.uas_byk",
+            "package_name": "id.devcamp.belajaryukak",
             "certificate_hash": "6f1696c38a032bc910339673b3e0ce43b31bfb55"
           }
         },
         {
-          "client_id": "523883687559-vtedds1s604t34gdg2jbtuf0g4jlv74d.apps.googleusercontent.com",
+          "client_id": "523883687559-kkmehdf793clurc1280jk9sq8sttsgnm.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyB6LlRHgOcEwx2t_bTWGgOKIJHtC7ynaCE"
+          "current_key": "AIzaSyDEysDOueoxPlWIzDDRCRsPrePaz4su-yU"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "523883687559-vtedds1s604t34gdg2jbtuf0g4jlv74d.apps.googleusercontent.com",
+              "client_id": "523883687559-kkmehdf793clurc1280jk9sq8sttsgnm.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

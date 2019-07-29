@@ -1,4 +1,4 @@
-package com.example.uas_byk.Quis;
+package id.devcamp.belajaryukak.Quis;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -8,8 +8,9 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-import com.example.uas_byk.HomeActivity;
-import com.example.uas_byk.R;
+import id.devcamp.belajaryukak.HomeActivity;
+import id.devcamp.belajaryukak.R;
+
 
 public class ResultActivity extends AppCompatActivity implements View.OnClickListener {
     TextView t1, t2, t3, t4;
